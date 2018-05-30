@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>动态时钟</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		
+		function disptime(){
+			var today=new Date();  //获得当前时间
+			var hh = today.getHours();//获得时分秒
+			var mm = today.getMinutes();
+			var ss = today.getSeconds();
+			document.getElementById("myclock").innerHTML ="<h1>现在是：" +hh+":"+mm+":"+ss+"</h1>";
+		}
+		function timer(){
+			vart = setInterval('disptime()',1000);
+		}
+	</script>
+</head>
+<body>
+	<div id="myclock">
+		<input type="button" name="jishi" value="动态时钟" onclick="timer()">
+	</div>
+
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>dom遍历筛选</title>
+	<style>
+		#ul li{
+			height: 30px;
+			line-height: 30px;
+			padding:0 15px;
+			border:1px solid #abcdef;
+			float: left;
+			margin-right: 3px;
+			cursor:pointer;
+			
+
+		}
+		#content{
+			width: 300px;
+			height: 200px;
+			float: left;
+			margin-top: 50px;
+			border: 1px solid blue;
+		}
+		#content div{
+			width: 300px;
+			height: 200px;
+			
+			border: 1px solid green;
+			display: none;
+
+		}
+		#ul li.current{
+			background:#abcdef;
+		}
+		#content div.show{
+			display: block;
+		}
+	</style>
+	<script src="../js/jquery.js"></script>
+</head>
+<body>
+	<ul id="ul">
+		<li><input type="button" value="html"></li>
+		<li><input type="button" value="css"></li>
+		<li><input type="button" value="js" ></li>
+	</ul>
+	
+	<div id="content">
+		<div>html...........</div>
+		<div>css............</div>
+		<div>js..............</div>
+	</div>
+	
+
+	<script>
+		
+		$('#ul li').click(function(){
+
+    
+    		$(this).addClass('current').siblings().removeClass('current');
+
+ 			$('#content > div').eq($(this).index()).show().siblings().hide();
+
+
+
+		});
+
+
+		
+		
+
+	</script>
+    
+</body>
+</html>

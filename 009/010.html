@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>茅屋为秋风所破歌</title>
+	<script src="../js/jquery.js"></script>
+</head>
+<body>
+	<h2><u>茅屋为秋风所破歌</u></h2>
+	<p><u>杜甫</u></p>
+	<p>安得广厦千万间，</p>
+	<p>大庇天下寒士俱欢颜，</p>
+	<p><b>风雨不动安如山！</b></p>
+	<p><b>呜呼！</b></p>
+	<p>何时眼前突兀现此屋</p>
+	<p>吾庐独破受冻死亦足！</p>
+
+	<script>
+		$("p:odd").css("background-color","yellow");
+		$("p:eq(1)").css('color','red');
+		
+		$("p:eq(3)").css("background-color","red");
+		$("p:eq(4)").css("background-color","yellow");
+		$("p:last").css("color","blue");
+
+
+		
+	</script>
+</body>
+</html>

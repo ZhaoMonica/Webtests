@@ -1,0 +1,41 @@
+#container{
+	width: 1000px;
+	border:1px solid black;
+
+}
+
+#login_container{
+	width: 1000px;
+	height: 45px;
+}
+#footer{
+	width: 1000px;
+}
+#main_container{
+	width: 1000px;
+}
+#vi_container{
+	width: 874px;
+	height: 90px;
+}
+#navigator_container{
+	width: 874px;
+	height: 26px;
+}
+#advertise{
+	width: 864px;
+	height: 100px;
+}
+#line_content{
+	width: 864px;
+	height: 260px;
+}
+#li1{
+	width: 224px;
+}
+#li2{
+	width: 320px;
+}
+#li3{
+	width: 320px;
+}

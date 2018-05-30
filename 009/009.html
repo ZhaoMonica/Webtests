@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>属性过滤选择器</title>
+	<style type="text/css">
+		div{
+			width: 200px;
+			height: 200px;
+			margin-left: 20px;
+			float: left;
+			background-color: #ccc;
+		}
+		.mini{
+			width: 80px;
+			height: 80px;
+			border: 1px solid;
+			margin: 8px;
+			float: left;
+			
+		}
+	</style>
+	<script src='../js/jquery.js'></script>
+</head>
+<body>
+	<h1>属性过滤选择器：</h1>
+		<p>
+		<button id="reset">手动重置页面元素</button> <input type="checkbox" name="">点击下列按钮时先自动重置页面</p>
+	<p>
+		<button id="bnt1">选取含有属性title的div元素</button>
+		<button id="btn2">选取属性title值等于“test”的div元素</button>
+		<button id="btn3">选取属性title值不等于“test”的div元素(没有属性title的也将被选中)</button>
+		<button id="btn4">选取属性title值以“te”开始的div元素</button>
+		<button id="btn5">选取属性title值以“est”结束的div元素</button>
+		<button id="btn6">选取属性title值含有“es”的div元素</button>
+		<button id="btn7">组合属性选择器，首先选取 有属性id的div元素，然后在结果中选取属性title值含有“es”的元素</button>
+		
+	</p>
+	
+	<div id="one" class="one">
+		id为one,class为one的div
+		<div class="mini">class为mini</div>
+	</div>
+	<div id="two" class="one" title="test">
+		id为two,class为one,title为test的div
+		<div class="mini" title="other">class为mini,title为test</div>
+		<div class="mini" title="test"></div>
+	</div>
+	<div>
+		<div class="mini">class为mini</div>
+		<div class="mini" >class为mini</div>
+		<div class="mini">class为mini</div>
+		<div class="mini" ></div>
+	</div>
+	<div>
+		<div class="mini">class为mini</div>
+		<div class="mini" >class为mini</div>
+		<div class="mini">class为mini</div>
+		<div class="mini" title="tesst" >class为mini,title为tesst</div>
+	</div>
+	<div>
+		包含input的type为"hidden"的div
+		<input type="hidden" name="">
+
+	</div>
+
+	<script>
+		$(document).ready(function(){
+			$('#bnt1').click(function(){
+				$('div[title]').css('background-color','yellow');
+			}); 
+			$('#btn2').click(function(){
+				$('div[title="test"]').css('background-color','yellow');
+			});
+			$('#btn3').click(function(){
+				$('div[title!="test"]').css('background-color','yellow');
+			});
+			$('#btn4').click(function(){
+				$('div[title^="te"]').css('background-color','yellow');
+			});
+			$('#btn5').click(function(){
+				$('div[title$="est"]').css('background-color','yellow');
+			});
+			$('#btn6').click(function(){
+				$('div[title*="es"]').css('background-color','yellow');
+			});
+			$('#btn7').click(function(){
+				$('div[id][title*="es"]').css('background-color','yellow');
+			});
+			
+			
+		});
+		$(document).ready(function(){
+			$('#reset').click(function(){
+				$('*').removeAttr('style');
+				$('div[class=none]').css({'display':'none'});
+			});
+		});
+		
+	</script>
+
+</body>
+</html>

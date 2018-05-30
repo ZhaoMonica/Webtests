@@ -1,0 +1,29 @@
+1、整体布局表格：width=778 根据页面设置高度
+2、广告图片：height:158
+3、导航 宽度207高度360
+（1）水泵高度108
+（2）深色间隔高度19
+（3）导航高度104
+（4）浅色间隔高度17
+（5）电话高度：112
+4、com_05宽264 		com_06宽307 高71
+5、com_07横条：宽411，高17
+6、com_09竖条：宽42 高143
+
+
+附带样式
+body {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+	background-image: url(../images/back.gif);
+	margin: 0px;
+}
+table {
+	FONT-SIZE: 12px
+}
+a {
+	COLOR: #ff6633; TEXT-DECORATION: none
+}
+.STYLE1 {color: #FF0000}

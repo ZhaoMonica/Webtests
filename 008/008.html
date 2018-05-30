@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>属性</title>
+	
+</head>
+<body>
+	<input type="'text" value="OK">
+    <p id="demo"> 点击下面的按钮来设置按钮的类型属性：</p>
+	<button onclick="myFunction()">改变属性</button>
+
+	<script type="text/javascript">
+		function myFunction(){
+			document.getElementsByTagName('input')[0].setAttribute('type','button');
+
+		}
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>数组元素添加</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		//push()
+		var arr = [1,2];
+		var result = arr.push(1,2,true);//push方法向数组中追加元素（返回值为新数组的长度）
+		//1,2,true均为追加的元素
+		alert(arr); //1,2,1,2,true
+		alert(result);//5
+
+		//unshift()
+		var arr1 = [1,2,3,true];
+		var r2 = arr1.unshift(10,false);
+		//从头部插入多个元素（返回新数组的长度）
+		alert(arr1);//10,false,1,2,3,true
+		alert(r2); //6
+
+		//splice()
+		var arr3 = [1,2,3,4,5];
+		document.write(arr3 + '<br />');
+		arr3.splice(2,0,6);
+		document.write(arr3 +　'<br />')// 1,2,6,3,4,5
+	</script>
+</head>
+<body>
+
+</body>
+</html>

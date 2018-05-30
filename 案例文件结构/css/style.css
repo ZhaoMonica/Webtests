@@ -1,0 +1,81 @@
+#container{
+	width: 1000px;
+	border:1px solid black;
+    margin: 0px auto;
+   
+
+}
+
+#login_container{
+	width: 1000px;
+	height: 66px;
+}
+
+
+#login_container_center{
+	width: 1000px;
+	
+	background-color: orange;
+	
+}
+#login_container li{
+	display: block;
+	float: left;
+	list-style: none;
+	margin-right: 5px;
+
+	margin-top: 7px;
+	text-align: center;
+}
+#bander{
+	width: 1000px;
+	height: 100px;
+	background-color: yellow;
+
+}
+#list1{
+	width: 1000px;
+	height: 30px;
+
+	background-color: green;
+}
+
+#footer{
+	width: 1000px;
+}
+#main_container{
+	width: 1000px;
+}
+#main_container_right{
+	width: 360px;
+	height: 300px;
+	margin-right: 5px;
+	float: right;
+	background-color: red;
+}
+#main_container_left{
+	width: 255px;
+	height: 300px;
+	margin-right: 5px;
+	float: left;
+	background-color: red;
+}
+#vi_container{
+	width: 874px;
+	height: 90px;
+	
+}
+
+#line_content{
+	width: 864px;
+	height: 260px;
+	background-color: red;
+	
+}
+
+#footer{
+	clear: both;
+	height: 50px;
+	width: 1000px;
+	background-color: black;
+}

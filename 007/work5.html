@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>显示时间</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		
+		function disptime(){
+			var today=new Date();  //获得当前时间
+			var year = today.getFullYear();//获得时分秒
+			var month = today.getMonth() + 1;
+			var date = today.getDate();
+			var hours = today.getHours();
+			var week = today.getDay();
+			document.getElementById("myclock").innerHTML ="<h1>现在是：" +year+"-"+month+"-"+date+"星期"+week+"</h1>";
+		}
+	
+	</script>
+</head>
+<body>
+	<div id="myclock">
+		<input type="button" name="jishi" value="显示时间" onclick="disptime()">
+	</div>
+
+
+</body>
+</html>

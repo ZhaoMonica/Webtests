@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		li{
+			list-style: none;
+			float: left;
+			display: block;
+			margin-left: 100px;
+			width: 200px;
+			height: 200px;
+		}
+	</style>
+	<script src="../js/jquery.js"></script>
+</head>
+<body>
+
+	<ul>
+		<li class="view"><a href="images/apple_1_bigger.jpg"></a><img src="images/apple_1.jpg"></li>
+		<li class="view"><a href="images/apple_2_bigger.jpg"></a><img  src="images/apple_2.jpg"></li>
+		<li class="view"><a href="images/apple_3_bigger.jpg"></a><img  src="images/apple_3.jpg"></li>
+		<li class="view"><a href="images/apple_4_bigger.jpg"></a><img src="images/apple_4.jpg"></li>
+	</ul>
+	
+	<ul>
+		<li><img src="images/apple_1.jpg"></li>
+		<li><img src="images/apple_2.jpg"></li>
+		<li><img src="images/apple_3.jpg"></li>
+		<li><img src="images/apple_4.jpg"></li>
+	</ul>
+
+
+	
+
+
+
+	<script>
+			$(document).ready(function(){
+			  $('.view').mouseover(function(){
+			    $(this).append('<img src="images/apple_1_bigger.jpg">');
+			  });
+			  $('.view').mouseout(function(){
+			    $(this).removeClass(".view");
+			  });
+			  
+			  
+			  });
+			
+		
+	</script>
+
+</body>
+</html>

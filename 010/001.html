@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>dom筛选</title>
+	<script src="../js/jquery.js"></script>
+</head>
+<body>
+	<p class="first">这是第一个段落</p>
+	<p id="second">这是第二个段落 </p>
+	<p>这是第三个段落</p>
+	<p>这是第四个段落</p>
+	<p>这是第五个段落</p>
+	<p>这是第六个段落</p>
+
+
+	<script>
+		// $('p').filter('#second').css('background-color', 'red');
+		// $('p').first().css('background-color','yellow');//该方法不接受任何参数
+		// $('p').last().css('background-color','green');
+		$('p').click(function(){
+			if($(this).is('.first')){
+				$(this).css('background-color','blue');
+			}
+		});
+		$('p').slice(1,4).css('background-color','red');
+
+	</script>
+</body>
+</html>

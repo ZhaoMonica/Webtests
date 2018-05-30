@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>切换</title>
+	<style type="text/css">
+		.test1{
+			width: 100px;
+			height: 100px;
+			background: red;
+			border-bottom-width: 1px;
+
+			}
+		.test2{
+			width: 105px;
+			height: 105px;
+			background: green;
+            border-bottom-width: 2px;
+			}	
+
+
+	</style>
+	<script type="text/javascript">
+		
+		
+		
+		function changecolor(){
+          
+	      
+			var div = document.getElementsByTagName('div')[0];
+			if(div.className == 'test1'){
+				div.className = 'test2';
+			}
+			else{
+				div.className ='test1';
+			}
+		  }
+		    
+	
+	</script>
+</head>
+<body>
+
+	<div class="test1" onclick="changecolor();"></div>
+	<!-- <div class="test2"></div> -->
+
+</body>
+</html>

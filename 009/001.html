@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery</title>
+	<script src="../js/jquery.js"></script>
+	<script>
+		// var p =$('p');
+		// p.click(function(){
+		// 	alert($(this).html());
+		// });
+		window.onload = function(){
+			alert(1);
+		}
+		window.onload = function(){
+			alert(2);
+		} //只会弹出2
+		$(document).ready(function(){ //页面加载完成事件
+			alert('hello world');  //弹出提示框
+		});
+		$(document).ready(function(){ //页面加载完成事件
+			alert('hello world');  //弹出提示框
+		});
+		$(function(){ //页面加载完成事件
+			alert('hello world');  //弹出提示框
+		});  //弹出3个，而且顺序会变
+		
+
+
+	</script>
+
+</head>
+<body>
+	<a href="#" onclick="ch()" style.cokor="red">aasaaaa</a>
+	<p>第一个段落</p>
+	<button id="hide"></button>
+</body>
+</html>

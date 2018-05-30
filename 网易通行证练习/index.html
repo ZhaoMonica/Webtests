@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>网易通行证</title>
+	<link rel="stylesheet" type="text/css" href="./main.css">
+	<script type="text/javascript" src="./main.js"></script>
+
+	
+</head>
+<body>
+	
+	<div class="center">
+	    <img src="./images/register_logo.gif" alt="logo">
+	</div>
+	<div id='content'>	
+		<div id="center">
+			
+			<table id='tablestyle'>
+			  <form action="" method="post" name='myForm' onsubmit="return check()">
+				<tr>
+					<td class="left">通行证用户名：</td>
+					<td>
+						<input id ='user' class='inputs' onblur="check()" type="text" name="uname" /><span style="font-size: 5px;">@163.com</span>
+                    </td>
+                    <td>	
+
+					    <div id='userId' class="red"></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="left">登录密码：</td>
+					<td><input id='pwd' class='inputs' onblur="check()" type="password" name="pwd"></td>
+					<td>	
+
+					    <div id='pwdId' class="red"></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="left">重复登录密码：</td>
+					<td><input id='repwd' class='inputs' onblur="check()" type="password" name="rpwd"></td>
+					<td>	
+
+					    <div id='repwdId' class="red"></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="left">性别：</td>
+					<td><input type="radio" name='sex' value="male">男&nbsp;<input type="radio" name='sex' value="female">女</td>
+				</tr>
+				<tr>
+					<td class="left">真实姓名：</td>
+					<td><input type="text" name="realname"></td>
+				</tr>
+				<tr>
+					<td class="left">昵称：</td>
+					<td><input id='nicheng' class='inputs' onblur="check()" onfocus="mess()"  type="text" name="realname1"><div id='mymess' class="mymess"></div></td>
+					<td>	
+
+					    <div id='nichengId' class="red"></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="left">关联手机号：</td>
+					<td><input id='tel' class='inputs' onblur="check()"   type="text" name="tel"></td>
+					<td>	
+
+					    <div id='telId' class="red"></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="left">保密邮箱：</td>
+					<td><input  id='eml' class='inputs' onblur="check()"  type="email" name="email"></td>
+					<td>	
+
+					    <div id='emlId' class="red"></div>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;padding-top: 30px;" colspan="3"><input type="button"  id="button1"></td>
+				
+				</tr>
+			</form>
+		   </table>
+		</div>
+    </div>
+
+
+</body>
+</html>

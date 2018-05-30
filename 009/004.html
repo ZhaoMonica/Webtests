@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery</title>
+	<script src="../js/jquery.js"></script>
+	<script>
+		$(function(){
+			$('#btn1').click(function(){
+				
+			
+				alert("你选择的是："+$('input[type = radio]:checked').val());
+
+			});
+		});
+   </script>
+
+</head>
+<body>
+	<p>请选择你喜欢的水果：</p>
+	<input type="radio" name="fruit" value="苹果">苹果
+	<input type="radio" name="fruit" value="香蕉">香蕉
+	<input type="radio" name="fruit" value="桔子">桔子
+	<br>
+	<button id="btn1">提交</button> 
+</body>
+</html>

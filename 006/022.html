@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <meta charset="utf-8" />
+       <title>示例3</title>
+       <script type="text/javascript">
+       /*弹出窗口*/
+       function open_adv(){
+          window.open("adv.html");   
+       }
+       /*弹出固定大小窗口，并且无菜单栏等*/
+       function open_fix_adv(){
+       window.open("adv.html","","height=380,width=320,toolbar=no,scrollbars=no,location=no,status=n     o,menubar=no,resizable=no");        
+       }
+       /*全屏显示*/
+       function fullscreen(){
+              window.open("adv.html","","fullscreen=yes");
+       }
+       /*弹出确认消息框*/
+       function confirm_msg(){
+            if(confirm("你相信自己是最棒的吗？"))
+                {   alert("有信心必定会赢，没信息一定会输！");   }
+                }
+       /*关闭窗口*/
+       function close_plan(){
+              window.close();
+       }
+</script>
+</head>
+<body>
+<input name="open1" type="button" value="弹出窗口" onclick="open_adv()" /><br/>
+<input name="open2" type="button" value="弹出固定大小窗口，且无菜单栏等"  onclick="open_fix_adv()"/><br/>
+ <input name="full" type="button" value="全屏显示"  onclick="fullscreen()"/><br/>
+<input name="con" type="button" value="打开确认窗口"  onclick="confirm_msg()"/><br/>
+<input name="c" type="button" value="关闭窗口"  onclick="close_plan()"/>
+</body>
+</html>

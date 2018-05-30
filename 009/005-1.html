@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>基本选择器</title>
+	<style type="text/css">
+		div{
+			width: 200px;
+			height: 200px;
+			margin-left: 20px;
+			float: left;
+			background-color: #ccc;
+		}
+		/*div{
+			width: 80px;
+			height: 80px;
+			border: 1px solid;
+			margin: 8px;
+			float: left;
+		}*/
+		.mini {
+			width: 80px;
+			height: 80px;
+			border: 1px solid;
+			margin: 8px;
+			float: left;
+		}
+
+		/*可将span转换成div,结果不一样，span是内联标签*/
+	</style>
+	<script src="../js/jquery.js"></script>
+	
+</head>
+<body>
+	<p>
+		<button id="reset">手动重置页面元素</button> <input type="checkbox" name="">点击下列按钮时先自动重置页面</p>
+	<p>
+		<button id="bnt1">选择id为one的元素</button>
+		<button id="btn2">选择class为mini的所有元素</button>
+		<button id="btn3">选择元素名为div的元素</button>
+		<button id="btn4">选择所有的的元素</button>
+		<button id="btn5">选择所有的span元素和id为two的元素</button>
+	</p>
+	
+	<div id="one" class="one">
+		id为one,class为one的div
+		<div class="mini">class为mini</div>
+	</div>
+	<div id="two" class="one" title="test">
+		id为two,class为one,title为test的div
+		<div class="mini" title="other">class为mini,title为test</div>
+		<div class="mini" title="test"></div>
+	</div>
+	<div>
+		<div class="mini">class为mini</div>
+		<div class="mini" >class为mini</div>
+		<div class="mini">class为mini</div>
+		<div class="mini" ></div>
+	</div>
+	<div>
+		<div class="mini">class为mini</div>
+		<div class="mini" >class为mini</div>
+		<div class="mini">class为mini</div>
+		<div class="mini" title="tesst" >class为mini,title为tesst</div>
+	</div>
+	<div>
+		包含input的type为"hidden"的div
+		<input type="hidden" name="">
+
+	</div>
+	<script>
+		$(document).ready(function(){
+			$('#bnt1').click(function(){
+				$('#one').css('background-color','yellow');
+			});
+			$('#btn2').click(function(){
+				$('.mini').css('background-color','yellow');
+			});
+			$('#btn3').click(function(){
+				$('div').css('background-color','yellow');
+			});
+			$('#btn4').click(function(){
+				$('*').css('background-color','yellow');
+			});
+			$('#btn5').click(function(){
+				$('span, #two').css('background-color','yellow');
+			});
+			
+		});
+		$(document).ready(function(){
+			$('#reset').click(function(){
+				$('*').removeAttr('style');
+				$('div[class=none]').css({'display':'none'});
+			});
+		});
+		
+	</script>
+
+
+</body>
+</html>

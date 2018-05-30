@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>添加新员工</title>
+</head>
+<body style="text-align: center;">
+	<p>添加新员工</p>
+	<p>name:  <input id='uname' type="text"> email:
+	  <input id='email' type="text"> salary:<input id='sal' type="text"></p>
+	<p><input onclick='funAdd()' type="button"  value="submit"> </p>
+     <hr>
+     <table border="1" align="center" id="myTable">
+     	<tr>
+     		<th>Name</th>
+     		<th>Email</th>
+     		<th>Salary</td>
+     		<th></th>
+     	</tr>
+     	<tr>
+     		<td>Tom</td>
+     		<td>tom@tom.com</td>
+     		<td>5000</td>
+     		<td><a href="javascript:;" onclick="del(this);">Delete</a></td>
+     	</tr>
+     	<tr>
+     		<td>Jerry</td>
+     		<td>jerry@sohu.com</td>
+     		<td>8000</td>
+     		<td><a href="javascript:;" onclick="del(this);">Delete</a></td>
+     	</tr>
+     	<tr>
+     		<td>Bob</td>
+     		<td>bob@tom.com</td>
+     		<td>6000</td>
+     		<td><a href="javascript:;" onclick="del(this);">Delete</a></td>
+     	</tr>
+     </table>
+     <script>
+	 
+    
+	     function funAdd(){
+			 var table = document.getElementById('myTable');
+			 var uname = document.getElementById('uname').value;
+			 var email = document.getElementById('email').value;
+			 var sal = document.getElementById('sal').value;
+			 
+			 var tr=document.createElement('tr');
+			 var td1=document.createElement('td');
+			 var td2=document.createElement('td');
+			 var td3=document.createElement('td');
+		     td1.innerHTML= uname;
+			 td2.innerHTML= email;
+			 td3.innerHTML= sal;
+			 var del=document.createElement("td");
+             del.innerHTML="<a href='javascript:;' onclick='del(this)' >Delete</a>";
+			 table.appendChild(tr);
+			 tr.appendChild(td1);
+			 tr.appendChild(td2);
+			 tr.appendChild(td3);
+			 tr.appendChild(del);
+		 }
+		// 创建删除函数
+		function del(obj){
+			flag = confirm('确定要删除吗？');
+			if(flag==true){
+				var tr=obj.parentNode.parentNode;
+				tr.parentNode.removeChild(tr);
+				alert('删除成功');
+			}else{
+				alert('删除失败');
+		}
+		}
+	 </script>
+</body>
+</html>

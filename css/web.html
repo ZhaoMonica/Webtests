@@ -1,0 +1,285 @@
+!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>静态网页</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../css/base.css"> -->
+	<style type="text/css">
+
+	    .container{
+	    	width: 1000px;
+	    	border: 1px solid black;
+	    	margin: 0px auto;
+	    	height: 1000px;
+	    }
+	    
+	    #nav li{
+	    	height: 30px;
+	    	float: left;
+	    	background: #EEE;
+	    	width: 120px;
+	    	margin-right:1px;
+	    	line-height: 30px; 
+	    }
+	    #nav a{
+	    	font-size: 15px;
+	    	font-family: 微软雅黑;
+	    	color: rgb(54,54,54);
+	    	display: block;
+
+	    	text-align: center;
+	    }
+	    #nav a:hover{
+	    	color: white;
+	    	background-color: orange;
+	    }
+	    #bg{
+	    	background-image: url("../img/bg2.jpg");
+	    	background-color: #FFF;
+	    }
+	/*	
+		li{
+			display:block;
+			float: right;
+		}*/
+		li a{
+			text-decoration: none;
+		}
+		a:hover{
+			background-color: yellow;
+		}
+		.header{
+			margin: 0px auto;
+			height: 100px;
+			width: 1000px;
+		}
+		.main{
+			
+			width: 1000px;
+			background: #CCC;
+		}
+		.contend{
+			width: 700px;
+			
+			
+		}
+		#contend1{
+			width: 320;
+			height: 300;
+			background: red;
+			float: left;
+			margin:8px;
+			margin-left: 50px;
+		}
+		#contend2{
+			width: 320;
+			height: 300;
+			background: green;
+			float: left;
+			margin: 8px;
+		}
+		#contend3{
+			width: 320;
+			height: 300px;
+			background: yellow;
+			float: left;
+			margin: 8px;
+			margin-left: 50px;
+		}
+		#contend4{
+			width: 320;
+			height: 300px;
+			background: orange;
+			float: left;
+			margin: 8px;
+		}
+		#c1{
+			width: 182px;
+			
+			float: left;
+
+		}
+		#c2{
+			width: 80px;
+			float: right;
+			margin-right: 50px;
+			margin-top:60px;
+			
+
+		}
+		#r{
+			width: 290px;
+			float:left;
+			
+			background: green;
+			margin-top: -264px;
+
+		}
+		#r1{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			margin-top: 10px;
+
+			float: left;
+			
+		}
+		#r11{
+			width: 200px;
+			height: 150px;
+			margin-left: 30px;
+		}
+		#r2{
+			width: 200px;
+			height: 473px;
+			background-color: #228B22;
+			margin-top: 100px;
+			
+		}
+		#r21{
+			width: 200px;
+			height: 300px;
+			margin-left: 30px;
+		}
+		#fooder{
+			width: 1000px;
+			height: 100px;
+			background: black;
+			clear: both;
+		}
+
+
+	</style>
+	
+	
+</head>
+<body id="bg">
+	<div  class="container">
+		<div class="header">
+			<img src="../img/logo.png">
+			<ul id="nav">
+				<li ><a href="#">nav1</a></li>
+				<li><a href="#">nav2</a></li>
+				<li><a href="#">nav3</a></li>
+				<li><a href="#">nav4</a></li>
+				<li><a href="#">nav5</a></li>
+				<li><a href="#">nav6</a></li>
+				<li><a href="#">nav7</a></li>
+			</ul>
+		</div>
+		 <div id="main"> 
+			<div class="contend">
+				<div id="contend1">
+					<div id="c1">
+						<p>服装</p>
+						<img src="../img/ts1.jpg" width="200" height="200" title="Model1">
+
+					</div>	
+					<div id="c2">
+						<ul>
+							<li><a href="#">content1</a>
+							<li><a href="#">content2</a>
+							<li><a href="#">content3</a>
+							<li><a href="#">content4</a>		
+						</ul>
+					</div>	
+				</div>
+				
+				<!--<ul>
+					<li><img src="../img/ts1.jpg" width="100" height="100" title="Model1"></li>
+					<a href="#">Model1</a>
+					<p>this is the first model</p>
+					<li><img src="../img/ts2.jpg" width="100" height="100" title="Model2"></li>
+					<a href="#">Model2</a>
+					<p>this is the second model</p>
+					<li><img src="../img/ts3.jpg" width="100" height="100" title="Model3"></li>
+					<a href="#">Model3</a>
+					<p>this is the third model</p>
+					<li><img src="../img/ts4.jpg" width="100" height="100" title="Model4"></li>
+					<a href="#">Model4</a>
+					<p>this is the fourth model</p>
+
+				</ul> -->
+					<div id="contend2">
+						<div id="c1">
+						<p>手机</p>
+						<img src="../img/ts2.jpg" width="200" height="200" title="Model2">
+
+					</div>	
+					<div id="c2">
+						<ul>
+							<li><a href="#">content1</a>
+							<li><a href="#">content2</a>
+							<li><a href="#">content3</a>
+							<li><a href="#">content4</a>		
+						</ul>
+					</div>	
+					</div>
+					<div id="contend3">
+						<div id="c1">
+						<p>家居</p>
+						<img src="../img/ts3.jpg" width="200" height="200" title="Model3">
+
+					</div>	
+					<div id="c2">
+						<ul>
+							<li><a href="#">content1</a>
+							<li><a href="#">content2</a>
+							<li><a href="#">content3</a>
+							<li><a href="#">content4</a>		
+						</ul>
+					</div>	
+					</div>
+					<div id="contend4">
+						<div id="c1">
+						<p>图书</p>
+						<img src="../img/ts4.jpg" width="200" height="200" title="Model4">
+
+					</div>	
+					<div id="c2">
+						<ul>
+							<li><a href="#">content1</a>
+							<li><a href="#">content2</a>
+							<li><a href="#">content3</a>
+							<li><a href="#">content4</a>		
+						</ul>
+					</div>	
+					</div>
+				</div>
+			<div id="r">
+				<div id="r1">
+					
+						<ul>
+							<li><a href="#">art1</a></li>
+							<li><a href="#">art2</a></li>
+							<li><a href="#">art3</a></li>
+							<li><a href="#">art4</a></li>	
+							<li><a href="#">art1</a></li>
+							<li><a href="#">art2</a></li>
+							<li><a href="#">art3</a></li>
+							<li><a href="#">art4</a></li>
+						</ul>
+				</div>
+				<div id="r2">
+					
+						<ul>
+							<li><a href="#">art1</a></li>
+							<li><a href="#">art2</a></li>
+							<li><a href="#">art3</a></li>
+							<li><a href="#">art4</a></li>	
+							<li><a href="#">art1</a></li>
+							<li><a href="#">art2</a></li>
+							<li><a href="#">art3</a></li>
+							<li><a href="#">art4</a></li>
+						</ul>
+					
+				</div>
+			</div>	
+			
+        </div>
+		<div id="fooder">
+		
+		</div>
+    </div>
+</body>
+</html>

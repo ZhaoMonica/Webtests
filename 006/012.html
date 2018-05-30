@@ -1,0 +1,36 @@
+<!DOCTYPE html >
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>课后练习1</title>
+<script language="javascript">
+	
+	//定义有参数的函数
+	function calc(one,two,op){
+		var x=parseInt(one);
+		var y=parseInt(two);
+		
+		switch(op){
+			case "+":
+				alert(x+"+"+y+"="+(x+y));
+				break;
+			case "-":
+				alert(x+"-"+y+"="+(x-y));
+				break;
+			case "*":
+				alert(x+"*"+y+"="+(x*y));
+				break;
+			case "/":
+				alert(x+"/"+y+"="+(x/y));
+				break;
+			default:
+				alert("不好意思，只支持加减乘除运算！");
+		}
+	}
+</script>
+</head>
+
+<body>
+	<button onclick="calc(prompt('请输入第一个数字',0),prompt('请输入第二个数字',0),prompt('请输入要进行的运算','+'));">计算</button>
+</body>
+</html>

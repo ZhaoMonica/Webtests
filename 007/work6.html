@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>显示时间</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		
+		
+			var today=new Date();  //获得当前时间
+			var hours = today.getHours();
+			hour = parseInt(hours);
+			if(hour <= 12){
+				document.write('上午好！');
+			}else if(hour>12 && hour<=18){
+				document.write('下午好！');
+			}
+			else{
+				document.write('晚上好！');
+			}
+			
+		
+	
+	</script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>遍历</title>
+	<script src="../js/jquery.js"></script>
+</head>
+<body>
+	<form>
+		<input type="text" value ="111">
+		<input type="text" value="112">
+		<input type="text" value="113">
+	</form>
+
+
+	<script>
+		//map常用于取值;用.get()编程数组
+		var arr = $('input').map(function(){
+			// alert($(this).val());
+			return $(this).val();
+		}).get();
+
+		// console.log(arr);
+		//将数组里的内容连接起来。转化为字符串
+		alert($('p').html(arr.join(',')));
+	</script>
+
+</body>
+</html>

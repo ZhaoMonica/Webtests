@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>注册</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.btnRegist{
+			background-image: url(../img/btnRegist.jpg);
+			width: 100px;
+			height: 30px;
+
+			
+
+		}
+		div{
+			margin: 0px auto;
+		}
+	</style>
+	<script src="../js/jquery.js"></script>
+</head>
+<body>
+	<div style="width: 300px; height: 300px;background-color: #ccc;">
+		
+		<table>
+			<form>
+				<tr>
+					<td  colspan="2" style="background-color: #ccc; font-size: 20px;text-align: center;">免费试听  现在体验</td>
+				</tr>
+				<tr>
+					<td>
+						姓名：
+					</td>
+					<td><input type="text" name="uname" disabled="disabled">   </td>
+				</tr>
+				<tr>
+					<td>邮箱：</td>
+					<td><input type="y=text" name="youcxiang">  </td>
+				</tr>
+				<tr>
+					<td>联系电话:</td>
+
+				    <td><input type="text" name="tel"> </td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><input type="button" name="btn" " class="btnRegist" ></td>
+				</tr>
+				
+
+
+
+
+			</form>
+		</table>
+		
+
+
+
+
+	</div>
+	<script>
+		alert($(':input').length);
+		$(':text').css('background-color','red');
+		$(':password').css('background-color','red');
+		alert($('input:radio').val());
+
+		//表单属性选择器
+		$('input:enabled');//匹配可用的input
+
+
+
+	</script>
+
+</body>
+</html>

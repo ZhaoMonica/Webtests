@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>表单选择器</title>
+	<script src="../js/jquery.js"></script>
+</head>
+<body>
+	<form>
+		<button>button</button>
+		<p><input type="checkbox" name="">1
+		<input type="checkbox" name="">2
+		<input type="checkbox" name="">3</p>
+		<p><input type="file" name="" value="选择文件"></p>
+		<p><input type="image" name=""></p>
+		
+		<p><input type="text" name=""></p>
+		<p><input type="radio" name="">1
+		<input type="radio" name="">2</p>
+		<p><input type="reset" name="" value="重置"></p>
+		<p><input type="submit" name="" value="提交"></p>
+		<p><input type="password" name=""></p>
+	</form>
+		<p><select>
+			<option>option</option>
+		</select></p>
+		<p><textarea rows="10" cols="10"></textarea></p>
+		<p><button>button</button></p>
+		<div id="append1"></div>
+	
+	
+
+
+	<script>
+		$('#append1').append('<div>有'+$(':input').length+'个(：input元素)</div>');
+		$('#append1').append('<div>有'+$(':text').length+'个(：text元素)</div>');
+		$('#append1').append('<div>有'+$(':password').length+'个(：password元素)</div>');
+		$('#append1').append('<div>有'+$(':radio').length+'个(：radio元素)</div>');
+		$('#append1').append('<div>有'+$(':checkbox').length+'个(：checkbox元素)</div>');
+		$('#append1').append('<div>有'+$(':submit').length+'个(：submit元素)</div>');
+		$('#append1').append('<div>有'+$(':image').length+'个(：image元素)</div>');
+
+		 
+		$('#append1').append('<div>有'+$(':button').length+'个(：button元素)</div>');
+		$('#append1').append('<div>有'+$(':file').length+'个(：file元素)</div>');
+		$('#append1').append('<div>有'+$(':hidden').length+'个(：hidden元素)</div>');
+		
+		
+
+		
+		$('#append1').append('<div>有'+$(':reset').length+'个(：reset元素)</div>');
+		$('#append1').append('<div>有'+$(':submit').length+'个(：submit元素)</div>');
+		// $('form :input')之间有空格
+		$('#append1').append('<div>有'+$('form :input').length+'个(input元素)</div>');
+		// $('#append1').append('<div>有'+$(':select').length+'个(：select元素)</div>');
+
+	</script>
+	
+</body>
+</html>

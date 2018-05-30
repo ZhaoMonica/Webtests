@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>布局</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	#container{
+		width: 680px;
+		background: #ccc;
+		margin: 0px auto;
+	}
+	#header{
+		height: 100px;
+		background: blue;
+
+	}
+	#nav{
+		height: 40px;
+		background:#FF7F00; 
+	}
+		
+	#content{
+		height: 400px;
+	}	
+	#contentr{
+		width: 400px;
+		height: 300px;
+		background: red;
+		float: right;
+
+	}
+	#contentl{
+		width: 260px;
+		height: 300px;
+		background: green;
+		float: left;
+
+	}
+	#foot{
+		height: 100px;
+		width: 680px;
+		background:#FF6A6A;
+		clear: both;
+
+	}
+	li{
+		display: inline;
+		margin: 30px;
+
+
+	
+	}
+	a:hover{
+		background-color: yellow;
+		
+
+			}
+	li a{
+		text-decoration: none;
+		margin-top: 5px;
+
+	}
+
+	</style>
+	
+</head>
+<body>
+	<div id="container">
+		<div id="header"></div>
+		<div id="nav">
+			<li><a href="#"> 首页</a></li>
+			<li><a href="#"> 登陆</a></li>
+			<li><a href="#"> 注册</a></li>
+			<li><a href="#"> 退出</a></li>
+		</div>
+		<div id="content">
+			<div id="contentl"></div>
+			<div id="contentr"></div>
+		<div id="foot"></div>	
+		
+</div>
+
+
+</body>
+</html>

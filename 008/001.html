@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>demo</title>
+
+	<script type="text/javascript">
+		window.onload = countBodyChildren;
+		function countBodyChildren(){
+			var body_element = document.geElementsByTagName('body')[0];
+			console.log(document.geElementsByTagName('body')[0]);
+			alert(body_element.childNodes.length);
+			console.log(body_element.childNodes);
+			
+		}
+	</script>
+	
+</head>
+<body>
+	<h1>你最喜欢哪些明星</h1>
+	<p title="my answer" id="answer" style="background: red;">我最喜欢的明星有：</p>
+    <ul class="stars">
+    	<li>范冰冰</li>
+    	<li>王宝强</li>
+    	<li>刘德华</li>
+    </ul>
+     <ul class="stars">
+    	<li>范冰冰</li>
+    	<li>王宝强</li>
+    	<li>刘德华</li>
+    </ul>
+    <ul class="test1"></ul>
+  <!--   <input type="button" name="获取属性" onclick="getAttr()"> -->
+  <!--   <script type="text/javascript">
+    	
+		// var answer=document.getElementById('answer');
+	 //    var stars=document.getElementById('stars');
+  //       var starArray = stars.getElementsByTagName('*');
+  //       alert(starArray.length);
+		// alert(document.getElementsByTagName('li')); //返回的而是一个集合
+		// // console.log("tagname的长度".document.getElementsByTagName('li').length);  //3
+		// var ull = document.getElementsByTagName('ul')[0];
+		// alert(ull.className);
+		// //查看文档中有多少元素节点
+		// alert(document.getElementsByTagName('*').length); 
+		// console.log(document.getElementsByTagName('*')); 
+		// // alert(answer.title);
+	 //    answer.style.background = 'green';
+
+	 // console.log(document.getElementsByClassName('stars').length);
+	 //  console.log(document.getElementsByClassName('stars')[0]);
+
+	</script> -->
+	<!-- 先加载静态的，再加载动态的。js代码位置； -->
+
+</body>
+</html>

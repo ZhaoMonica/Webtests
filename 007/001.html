@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>简易购物车</title>
+	<meta charset="utf-8">
+	<script>
+		   function allscreen(){
+		   	window.open('001.html','','fullscreen=yes');
+
+
+		   }
+		   function dingdan(){
+
+		   	  var flag=window.confirm('你要提交订单吗?');
+		   	  if(flag ==true){
+
+		   	  	alert('订单已经提交');
+		   	  }else{
+		   	  	alert('订单已经取消');
+		   	  }
+           }
+		
+	</script>
+	<style type="text/css">
+		td{
+			text-align:center;
+		}
+
+
+	</style>
+</head>
+<body>
+	<table border="1" align="center">
+		<tr>
+			<td colspan="5">购物车</td>
+		</tr>
+		 <tr>
+		 	<td>衣服</td>
+		 	<td>金额</td>
+		 	<td>零食</td>
+		 	<td>金额</td>
+		 	<td>总计</td>
+		 </tr>
+		 <tr>
+		 	<td>T恤</td>
+		 	<td>100</td>
+		 	<td>良品铺子</td>
+		 	<td>100</td>
+		 	<td>200</td>
+		 </tr>
+		 <tr>
+		 	<td colspan="5">
+		 		<input type="button" name="btn" value="提交" onclick="dingdan()">
+		 		<input type="button" name="ret" value="全屏显示" onclick="allscreen()">
+		 	</td>
+		 </tr>
+	</table>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>open方法</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		function open_win(){
+			/*点击打开百度页面，
+			设置显示浏览器的工具栏，toolbar；
+			显示地址栏：location；
+			不添加状态栏：status;
+			显示菜单栏：menubar;
+			显示滚动条：scrollbars;
+			窗口不能调节尺寸，reziable;
+			高度，宽度分别为400像素，width  height */
+
+			window.open("http://www.baidu.com",'baidu','toolbar=yes,location=yes,status=no,menubar=yes,scrollbars=no,resizable=no,width=400,height=400');
+		}
+	</script>
+</head>
+<body>
+	<button onclick="open_win()">调用</button>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>切换</title>
+	<style type="text/css">
+		.test1{
+			
+			background-image:url('../img/pic_bulboff.gif');
+			
+
+			}
+		.test2{
+			
+			background-image:url('../img/pic_bulbon.gif');
+           
+			}	
+
+
+	</style>
+	<script type="text/javascript">
+		
+		
+		
+		function changecolor(){
+          
+	      
+			var div = document.getElementsByTagName('div')[0];
+			if(div.className == 'test1'){
+				div.className = 'test2';
+				
+			}
+			else{
+				div.className ='test1';
+				
+			}
+			
+		  }
+		    
+	
+	</script>
+</head>
+<body>
+
+	<div class="test1" onclick="changecolor();" style="width: 100px; height:180px; border-bottom: 1px solid black;"></div>
+	<!-- <div class="test2"></div> -->
+
+</body>
+</html>

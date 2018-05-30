@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>全选/全不选</title>
+</head>
+<body>
+	<p>你爱好的运动是？<input id="checkedAll_1"  onclick="funSel()" type="checkbox">全选/全不选</p>
+	<p><input type="checkbox" name="items">足球<input type="checkbox" name="items">篮球<input type="checkbox" name="items">羽毛球<input type="checkbox" name="items">乒乓球</p>
+	<p><input  id="checkedAll_2"  onclick="funSelAll()" type="button" value="全选"> <input id="checkedAll_3"  onclick="funDelAll()" type="button" value="全不选"> <input type="button" id="checkedAll_4"  onclick="funFanXuan()" value="反选"> <input type="button"  onclick="submit()" value="提交"> </p>
+<script>
+	//全选
+	function funSelAll(){
+		var selects = document.getElementsByName('items');
+        // alert(document.getElementById('checkedAll_2').checked)
+		if(document.getElementById('checkedAll_2').checked = true){
+			 // alert(document.getElementById('checkedAll_2').checked);
+			for(var i =0;i<selects.length;i++){
+				selects[i].checked=true;
+			}
+		}
+
+	}
+	//全不选
+	function funDelAll(){
+		var selects = document.getElementsByName('items');
+        // alert(document.getElementById('checkedAll_2').checked)
+		if(document.getElementById('checkedAll_3').checked = true){
+			 // alert(document.getElementById('checkedAll_2').checked);
+			for(var i =0;i<selects.length;i++){
+				selects[i].checked=false;
+			}
+		}
+
+	}
+
+	//反选
+	function funFanXuan(){
+		var selects = document.getElementsByName('items');
+        // alert(document.getElementById('checkedAll_2').checked)
+		if(document.getElementById('checkedAll_4').checked = true){
+			 // alert(document.getElementById('checkedAll_2').checked);
+			for(var i =0;i<selects.length;i++){
+				if(selects[i].checked==false){
+					selects[i].checked=true;
+				}else if(selects[i].checked==true){
+					selects[i].checked=false;
+				}
+				
+			}
+		}
+
+	}
+
+	//提交
+	function submit(){
+		var selects = document.getElementsByName('items');
+		var count=0;
+		for(var i =0;i<selects.length;i++){
+				if(selects[i].checked==true){
+				    count++;
+				}
+			}
+
+		alert('提交成功,您选择了' + count +'项');
+	}
+
+	//全选、全不选
+     function funSel(){
+     	
+        var selects = document.getElementsByName('items');
+        var count=0;
+         if(document.getElementById('checkedAll_1').checked == true){
+         	// alert(document.getElementById('checkedAll_1').checked);
+         	for(var i =0;i<selects.length;i++){
+         		if (selects[i].checked==true) {
+         			count++;
+         		}
+
+         	}
+            // alert(selects.length);
+         	if(count !=selects.length && count!=0){
+         		for(var i =0;i<selects.length;i++){
+         		      selects[i].checked=false;
+         		}
+         	}else if(count == 0 ){
+         		for(var i =0;i<selects.length;i++){
+         		      selects[i].checked=true;
+         		}
+
+         	}
+
+
+         	
+         }else{
+     		for(var i =0;i<selects.length;i++){
+     		      selects[i].checked=false;
+     		}
+
+     	}
+	}
+
+
+
+</script>
+</body>
+</html>

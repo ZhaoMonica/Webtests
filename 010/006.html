@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>表格一</title>
+	<script src="../js/jquery.js"></script>
+</head>
+<body>
+	<table border="1px solid red" cellspacing="0">
+		
+		<tr class="red">
+			<td>11111</td>
+			<td>22222</td>
+			<td>33333</td>
+			<td>44444</td>
+			<td>55555</td>
+		</tr>
+		<tr class="yellow">
+			<td>aaaaa</td>
+			<td>bbbbb</td>
+			<td>ccccc</td>
+			<td>ddddd</td>
+			<td>eeeee</td>
+		</tr>
+		<tr class="red">
+			<td>11111</td>
+			<td>22222</td>
+			<td>33333</td>
+			<td>44444</td>
+			<td>55555</td>
+		</tr>
+		<tr class="yellow">
+			<td>aaaaa</td>
+			<td>bbbbb</td>
+			<td>ccccc</td>
+			<td>ddddd</td>
+			<td>eeeee</td>
+		</tr>
+		<tr class="red">
+			<td>11111</td>
+			<td>22222</td>
+			<td>33333</td>
+			<td>44444</td>
+			<td>55555</td>
+		</tr>
+		<tr class="yellow">
+			<td>aaaaa</td>
+			<td>bbbbb</td>
+			<td>ccccc</td>
+			<td>ddddd</td>
+			<td>eeeee</td>
+		</tr>
+		<tr class="red">
+			<td>11111</td>
+			<td>22222</td>
+			<td>33333</td>
+			<td>44444</td>
+			<td>55555</td>
+		</tr>
+		<tr class="yellow">
+			<td>aaaaa</td>
+			<td>bbbbb</td>
+			<td>ccccc</td>
+			<td>ddddd</td>
+			<td>eeeee</td>
+		</tr>
+	</table>
+
+
+	
+	<script>
+		var red = document.getElementsByClassName('red');
+		var yellow = document.getElementsByClassName('yellow');
+		for(var i=0;i<red.length;i++){
+			red[i].style.background = 'red';
+		}
+		for(var i=0;i<yellow.length;i++){
+			yellow[i].style.background = 'yellow';
+		}
+		
+	</script>
+</body>
+</html>

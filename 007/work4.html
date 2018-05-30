@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>天数</title>
+	<script type="text/javascript">
+		var year=prompt("请输入年份：","");
+		var month=prompt("请输入月份:" ,"");
+		var day=prompt("请输入天数：","");
+		if((year%4==0&&year%100!=0)||year%400==0){
+			var day1=[31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+		}else {
+			var day1=[31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+		}
+		
+		for (var i = 1; i < 13;i++) {
+			if (i=month) {
+				if (i>1) {
+					var sum=0;
+
+					for (var j = 0; j < i-1; j++) {
+						sum =sum+day1[j];
+					}
+				var result = parseInt(sum)+parseInt(day);
+				alert(year+"年"+month+"月"+day+"日是今年的第"+result+"天");
+				break;
+				}else{
+					alert(year+"年"+month+"月"+day+"日是今年的第"+day+"天");
+					break;
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

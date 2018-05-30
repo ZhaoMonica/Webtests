@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>数组</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+	/*第一种方式*/
+	var scores = new Array(4);
+	scores[0]=39;
+	scores[1]=40;
+	scores[2]=41;
+	scores[3]=42;
+	document.write("scores：" + scores +"<br/>");
+	score="scores:"+scores[0]+","+scores[1];
+   	document.write(score);
+
+   	/*第二种方式*/
+	var scores1 = new Array(39,40,41,42);
+	document.write("<br/>"+"scores1："+ scores1 + "<br/>");
+	/*第三种方式*/
+	var scores2 = [39,40,41,42];
+	document.write("scores2："+ scores2 + "<br/>");
+
+
+	var scores4 = new Array(30);
+	document.write("scores4的长度为："+scores4.length + "<br />");
+
+	test = new Array();
+	test[0] = 39;
+	test[5] = 40;
+	document.write("test数组长度为：" + test.length);
+	document.write('<br />'+test[4]);
+	document.write('<br />'+test[5]);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

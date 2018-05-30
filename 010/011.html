@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>查看学生信息</title>
+	<style>
+		td{
+			width: 100px;
+			height: 30px; 
+			line-height:30px;
+			text-align: center;
+
+		}
+		table{
+			margin:0px auto;
+			margin-top: 100px;
+			border-color: blue;
+			
+		}
+		div{
+			width: 300px;
+			height: 200px;
+			background-color: yellow;
+			display: none;
+			margin-left: 500px;
+		}
+		p{
+			border-bottom: 1px solid red;
+		}
+
+
+	</style>
+	<script src="../js/jquery.js"></script>
+</head>
+<body>
+	<table cellspacing="0px" border="1px solid">
+		<tr>
+			<th>姓名</th>
+			<th>年龄</th>
+			<th>性别</th>
+			<th>班级</th>
+			<th>操作</th>
+		</tr>
+		<tr>
+			<td>张三</td>
+			<td>22</td>
+			<td>男</td>
+			<td>一班</td>
+			<td><a href='#' class='view'>查看</a></td>
+		</tr>
+		<tr>
+			<td>李四</td>
+			<td>22</td>
+			<td>女</td>
+			<td>一班</td>
+			<td><a href='#' class='view'>查看</a></td>
+
+		</tr>
+		<tr>
+			<td>王五</td>
+			<td>22</td>
+			<td>男</td>
+			<td>一班</td>
+			<td><a href='#' class='view'>查看</a></td>
+		</tr>
+	</table>
+	<div class="popdiv">
+		<p>姓名---<span></span></p>
+		<p>年龄---<span></span></p>
+		<p>性别---<span></span></p>
+		<p>班级---<span></span></p>
+		<a href="#" class="close">关闭</a>
+	</div>
+
+	
+
+
+
+	<script>
+		//
+		// var arr=new Array();
+		// var td=document.getElementsByTagName('td');
+		//  alert(td.length);
+
+		// for(var i = 0;i<td.length;i++){
+		// 	arr[i]=td[i];	
+		// }
+		// function sel(obj){
+		// 	obj
+
+		// }
+		// alert(arr[1].innerHTML);
+		$('.view').click(function(){
+			//点击class="view"的a标签，出发功能
+			var arr = [];
+			//each遍历record每一个字段
+			$(this).parent().siblings().each(function(){
+				//写入数组
+				arr.push($(this).text());
+				//alert(arr);
+
+			});
+			//弹出div，并用each遍历写入数组元素
+			$('.popdiv').show().children().each(function(i){
+				$(this).children('span').text(arr[i]);
+
+			});
+
+		});
+		//关闭
+		$('.close').click(function(){
+			$(this).parent().hide();
+		});
+
+
+		
+		
+	</script>
+
+</body>
+</html>
